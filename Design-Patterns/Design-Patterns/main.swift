@@ -10,7 +10,8 @@ import Foundation
 
 
 func run() {
-    SimpleFactorySpace.run()
+//    SimpleFactorySpace.run()
+    FactoryMethodSpace.run()
 }
 
 run()

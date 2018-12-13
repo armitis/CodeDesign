@@ -10,6 +10,7 @@
 		1EA9230921C24C4100731206 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA9230821C24C4100731206 /* main.swift */; };
 		1EA9231921C2566F00731206 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA9231721C2566F00731206 /* Product.swift */; };
 		1EA9231A21C2566F00731206 /* SimpleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA9231821C2566F00731206 /* SimpleFactory.swift */; };
+		1EA9231E21C2597600731206 /* FactoryMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA9231D21C2597600731206 /* FactoryMethod.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,7 @@
 		1EA9230821C24C4100731206 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		1EA9231721C2566F00731206 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		1EA9231821C2566F00731206 /* SimpleFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleFactory.swift; sourceTree = "<group>"; };
+		1EA9231D21C2597600731206 /* FactoryMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryMethod.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 		1EA9230F21C24C4B00731206 /* Creation */ = {
 			isa = PBXGroup;
 			children = (
+				1EA9231C21C2595500731206 /* FactoryMethod */,
 				1EA9231621C255F000731206 /* SimpleFactory */,
 			);
 			path = Creation;
@@ -98,6 +101,14 @@
 				1EA9231821C2566F00731206 /* SimpleFactory.swift */,
 			);
 			path = SimpleFactory;
+			sourceTree = "<group>";
+		};
+		1EA9231C21C2595500731206 /* FactoryMethod */ = {
+			isa = PBXGroup;
+			children = (
+				1EA9231D21C2597600731206 /* FactoryMethod.swift */,
+			);
+			path = FactoryMethod;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +171,7 @@
 				1EA9231A21C2566F00731206 /* SimpleFactory.swift in Sources */,
 				1EA9230921C24C4100731206 /* main.swift in Sources */,
 				1EA9231921C2566F00731206 /* Product.swift in Sources */,
+				1EA9231E21C2597600731206 /* FactoryMethod.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
