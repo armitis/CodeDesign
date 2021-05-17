@@ -13,16 +13,6 @@ protocol Component {
     func id() -> String;
 }
 
-extension Component {
-    func move(point: CGPoint){
-        
-    }
-    
-    func draw(){
-        
-    }
-}
-
 class ComponentId: Component {
     
     private let i: String
@@ -34,17 +24,25 @@ class ComponentId: Component {
     func id() -> String {
         return self.i
     }
+    
+    func move(point: CGPoint){
+        
+    }
+    
+    func draw(){
+        
+    }
 }
 
 class Point:  ComponentId {
     
     var p: CGPoint = CGPoint(x: 0, y: 0)
     
-    func move(point: CGPoint) {
+    override func move(point: CGPoint) {
         self.p = point
     }
     
-    func draw() {
+    override func draw() {
         print("p = \(self.p), draw Point")
     }
 
@@ -53,11 +51,11 @@ class Point:  ComponentId {
 class Circle: ComponentId {
     var p: CGPoint = CGPoint(x: 0, y: 0)
     
-    func move(point: CGPoint) {
+    override func move(point: CGPoint) {
         self.p = point
     }
     
-    func draw() {
+    override func draw() {
         print("p = \(self.p), draw Circle")
     }
 }
@@ -66,13 +64,13 @@ class Composite: ComponentId {
     
     var children: [Component] = [Component]()
     
-    func draw() {
+    override func draw() {
         for child in self.children {
             child.draw()
         }
     }
     
-    func move(point: CGPoint) {
+    override func move(point: CGPoint) {
         for child in self.children {
             child.move(point: point)
         }
@@ -89,4 +87,23 @@ class Composite: ComponentId {
             self.children.remove(at: index)
         }
     }
+}
+
+func compositeTest() {
+    
+    let p = Point()
+    let circle = Circle()
+    
+    let c = Composite()
+    c.addChild(c: p)
+    c.move(point: CGPoint(x: 100, y: 100))
+    c.draw()
+    
+    c.addChild(c: circle)
+    c.move(point: CGPoint(x: 200, y: 200))
+    c.draw()
+    
+    c.removeChild(c: p)
+    c.move(point: CGPoint(x: 150, y: 150))
+    c.draw()
 }
