@@ -16,4 +16,6 @@ import Foundation
 //桥接模式
 //testBridge()
 //组合模式
-compositeTest()
+//compositeTest()
+//装饰者
+testDecorator()
