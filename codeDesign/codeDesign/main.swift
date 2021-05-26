@@ -18,4 +18,6 @@ import Foundation
 //组合模式
 //compositeTest()
 //装饰者
-testDecorator()
+//testDecorator()
+//门面模式
+testFacade()
