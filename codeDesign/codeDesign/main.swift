@@ -20,4 +20,6 @@ import Foundation
 //装饰者
 //testDecorator()
 //门面模式
-testFacade()
+//testFacade()
+//享元模式
+testFlyweight()
