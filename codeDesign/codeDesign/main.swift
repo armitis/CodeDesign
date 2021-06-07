@@ -22,4 +22,8 @@ import Foundation
 //门面模式
 //testFacade()
 //享元模式
-testFlyweight()
+//testFlyweight()
+//代理模式
+//testProxy()
+//响应者链
+testChain()
