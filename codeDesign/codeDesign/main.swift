@@ -27,3 +27,5 @@ import Foundation
 //testProxy()
 //响应者链
 testChain()
+
+1
