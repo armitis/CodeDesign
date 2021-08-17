@@ -26,6 +26,6 @@ import Foundation
 //代理模式
 //testProxy()
 //响应者链
-testChain()
-
-1
+//testChain()
+//命令模式
+testCommand()
