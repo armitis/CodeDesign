@@ -28,4 +28,6 @@ import Foundation
 //响应者链
 //testChain()
 //命令模式
-testCommand()
+//testCommand()
+//迭代器
+testIterator()
