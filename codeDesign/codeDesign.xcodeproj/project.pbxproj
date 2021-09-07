@@ -13,6 +13,7 @@
 		1965AF44265E82B500A95E37 /* Facade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1965AF43265E82B500A95E37 /* Facade.swift */; };
 		1965B52D26611ED600A95E37 /* Flyweight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1965B52C26611ED600A95E37 /* Flyweight.swift */; };
 		1965BA8D2666687000A95E37 /* Proxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1965BA8C2666687000A95E37 /* Proxy.swift */; };
+		1972CAAA26E79C8C00F9A9FA /* Mediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1972CAA926E79C8C00F9A9FA /* Mediator.swift */; };
 		198AAC482653F75F001E1068 /* Decorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198AAC472653F75F001E1068 /* Decorator.swift */; };
 		19A633FD2614AC45008F0CAF /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A633FC2614AC45008F0CAF /* main.swift */; };
 		19A634072614AC58008F0CAF /* FactroyMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A634062614AC58008F0CAF /* FactroyMethod.swift */; };
@@ -41,6 +42,7 @@
 		1965AF43265E82B500A95E37 /* Facade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Facade.swift; sourceTree = "<group>"; };
 		1965B52C26611ED600A95E37 /* Flyweight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flyweight.swift; sourceTree = "<group>"; };
 		1965BA8C2666687000A95E37 /* Proxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proxy.swift; sourceTree = "<group>"; };
+		1972CAA926E79C8C00F9A9FA /* Mediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mediator.swift; sourceTree = "<group>"; };
 		198AAC472653F75F001E1068 /* Decorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decorator.swift; sourceTree = "<group>"; };
 		19A633F92614AC45008F0CAF /* codeDesign */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = codeDesign; sourceTree = BUILT_PRODUCTS_DIR; };
 		19A633FC2614AC45008F0CAF /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				19F9FC52266A486D00CCFE84 /* ChainOfResponsibility.swift */,
 				1ED1513D26A433FE00E34744 /* Command.swift */,
 				1952834826D9154A00E5BF84 /* Iterator.swift */,
+				1972CAA926E79C8C00F9A9FA /* Mediator.swift */,
 			);
 			path = Behavioral;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 				19A633FD2614AC45008F0CAF /* main.swift in Sources */,
 				1965AF44265E82B500A95E37 /* Facade.swift in Sources */,
 				1965BA8D2666687000A95E37 /* Proxy.swift in Sources */,
+				1972CAAA26E79C8C00F9A9FA /* Mediator.swift in Sources */,
 				1965B52D26611ED600A95E37 /* Flyweight.swift in Sources */,
 				19A634072614AC58008F0CAF /* FactroyMethod.swift in Sources */,
 				19A6340A2614ACAF008F0CAF /* AbstractFactroy.swift in Sources */,
