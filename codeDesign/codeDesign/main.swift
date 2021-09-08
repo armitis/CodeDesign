@@ -30,4 +30,6 @@ import Foundation
 //命令模式
 //testCommand()
 //迭代器
-testIterator()
+//testIterator()
+//中介者
+testMediator()

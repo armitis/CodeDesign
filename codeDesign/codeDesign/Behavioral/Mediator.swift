@@ -7,7 +7,7 @@
 
 import Foundation
 
-class MediatorComponent {
+class MediatorComponent: NSObject {
     var mediator: Mediator?
 }
 
@@ -73,6 +73,14 @@ class Dialog: Mediator {
         if component == self.loginButton, event == "click" {
             if self.isLoginCheckBox.checked {
                 if self.nameTextField.text.count > 0, self.passwordTextField.text.count > 0 {
+                    if self.nameTextField.text.count > 10 {
+                        print("用户名长度不能超过10个字符")
+                        return
+                    }
+                    if self.passwordTextField.text.count < 8 {
+                        print("用户密码不能少于8位")
+                        return
+                    }
                     print("登录成功")
                 } else {
                     print("请填写用户名或者密码")
@@ -89,7 +97,7 @@ class Dialog: Mediator {
                 print("用户名长度不能超过10个字符")
             }
         }
-        if component == self.passwordTextField, event = "textChanged" {
+        if component == self.passwordTextField, event == "textChanged" {
             if self.passwordTextField.text.count == 0 {
                 print("用户密码不能为空")
             }
@@ -102,7 +110,7 @@ class Dialog: Mediator {
 
 func testMediator() {
     let d = Dialog()
-    d.isLoginCheckBox = true
+    d.isLoginCheckBox.checked = true
     d.passwordTextField.text = "123"
     d.loginButton.click()
     
