@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1901F282262B05C80093A2F7 /* Bridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1901F281262B05C80093A2F7 /* Bridge.swift */; };
+		191FA29626F0D04D009BC175 /* Memento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191FA29526F0D04D009BC175 /* Memento.swift */; };
 		193B5BFF261C908B005F5A9D /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193B5BFE261C908B005F5A9D /* Builder.swift */; };
 		1952834926D9154A00E5BF84 /* Iterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1952834826D9154A00E5BF84 /* Iterator.swift */; };
 		1965AF44265E82B500A95E37 /* Facade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1965AF43265E82B500A95E37 /* Facade.swift */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		1901F281262B05C80093A2F7 /* Bridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bridge.swift; sourceTree = "<group>"; };
+		191FA29526F0D04D009BC175 /* Memento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memento.swift; sourceTree = "<group>"; };
 		193B5BFE261C908B005F5A9D /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
 		1952834826D9154A00E5BF84 /* Iterator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Iterator.swift; sourceTree = "<group>"; };
 		1965AF43265E82B500A95E37 /* Facade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Facade.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				1ED1513D26A433FE00E34744 /* Command.swift */,
 				1952834826D9154A00E5BF84 /* Iterator.swift */,
 				1972CAA926E79C8C00F9A9FA /* Mediator.swift */,
+				191FA29526F0D04D009BC175 /* Memento.swift */,
 			);
 			path = Behavioral;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 				19A6340A2614ACAF008F0CAF /* AbstractFactroy.swift in Sources */,
 				193B5BFF261C908B005F5A9D /* Builder.swift in Sources */,
 				198AAC482653F75F001E1068 /* Decorator.swift in Sources */,
+				191FA29626F0D04D009BC175 /* Memento.swift in Sources */,
 				1952834926D9154A00E5BF84 /* Iterator.swift in Sources */,
 				1ED1513E26A433FE00E34744 /* Command.swift in Sources */,
 			);

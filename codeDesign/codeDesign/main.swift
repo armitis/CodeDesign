@@ -32,4 +32,6 @@ import Foundation
 //迭代器
 //testIterator()
 //中介者
-testMediator()
+//testMediator()
+//备忘录
+testMemento()
