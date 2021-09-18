@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 protocol Component {
     func move(point: CGPoint);
