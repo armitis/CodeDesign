@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		195AD47E26FCA92600050E9D /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195AD47D26FCA92600050E9D /* State.swift */; };
 		196E777326F5E7930046C7A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196E777226F5E7930046C7A4 /* AppDelegate.swift */; };
 		196E777526F5E7930046C7A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196E777426F5E7930046C7A4 /* SceneDelegate.swift */; };
 		196E777726F5E7930046C7A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196E777626F5E7930046C7A4 /* ViewController.swift */; };
@@ -50,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		195AD47326FCA90E00050E9D /* CodeDesign-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CodeDesign-Bridging-Header.h"; sourceTree = "<group>"; };
+		195AD47D26FCA92600050E9D /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 		196E776F26F5E7930046C7A4 /* CodeDesign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeDesign.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		196E777226F5E7930046C7A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		196E777426F5E7930046C7A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -178,6 +181,8 @@
 				196E77AD26F5E7C30046C7A4 /* Iterator.swift */,
 				196E77AE26F5E7C30046C7A4 /* CDNotification.swift */,
 				196E77AF26F5E7C30046C7A4 /* ChainOfResponsibility.swift */,
+				195AD47326FCA90E00050E9D /* CodeDesign-Bridging-Header.h */,
+				195AD47D26FCA92600050E9D /* State.swift */,
 			);
 			path = Behavioral;
 			sourceTree = "<group>";
@@ -272,6 +277,7 @@
 				TargetAttributes = {
 					196E776E26F5E7930046C7A4 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 					196E778426F5E79C0046C7A4 = {
 						CreatedOnToolsVersion = 12.4;
@@ -345,6 +351,7 @@
 				196E77BC26F5E7C30046C7A4 /* Memento.swift in Sources */,
 				196E77C526F5E7C30046C7A4 /* FactroyMethod.swift in Sources */,
 				196E77C826F5E7C30046C7A4 /* Proxy.swift in Sources */,
+				195AD47E26FCA92600050E9D /* State.swift in Sources */,
 				196E77CA26F5E7C30046C7A4 /* Facade.swift in Sources */,
 				196E77C926F5E7C30046C7A4 /* Composite.swift in Sources */,
 				196E777326F5E7930046C7A4 /* AppDelegate.swift in Sources */,
@@ -528,6 +535,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4ZX84L8FH6;
 				INFOPLIST_FILE = CodeDesign/Info.plist;
@@ -537,6 +545,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ZZW.CodeDesign;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CodeDesign/Source/Behavioral/CodeDesign-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -547,6 +557,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4ZX84L8FH6;
 				INFOPLIST_FILE = CodeDesign/Info.plist;
@@ -556,6 +567,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ZZW.CodeDesign;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CodeDesign/Source/Behavioral/CodeDesign-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -42,7 +42,9 @@ class ViewController: UIViewController {
         //备忘录
         //testMemento()
         //观察者
-        testNotification()
+//        testNotification()
+        //状态模式
+        testState()
     }
 
 
