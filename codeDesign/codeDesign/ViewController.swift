@@ -44,7 +44,11 @@ class ViewController: UIViewController {
         //观察者
 //        testNotification()
         //状态模式
-        testState()
+//        testState()
+        //模板方法
+//        testMethodTemplate()
+        //访问者
+        testVisitor()
     }
 
 

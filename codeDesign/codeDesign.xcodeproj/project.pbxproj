@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		194FD8B527033387008F4AA7 /* Visitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194FD8B427033387008F4AA7 /* Visitor.swift */; };
 		195AD47E26FCA92600050E9D /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195AD47D26FCA92600050E9D /* State.swift */; };
+		196DFAA52701F7B700177F7C /* MethodTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196DFAA42701F7B700177F7C /* MethodTemplate.swift */; };
 		196E777326F5E7930046C7A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196E777226F5E7930046C7A4 /* AppDelegate.swift */; };
 		196E777526F5E7930046C7A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196E777426F5E7930046C7A4 /* SceneDelegate.swift */; };
 		196E777726F5E7930046C7A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196E777626F5E7930046C7A4 /* ViewController.swift */; };
@@ -51,8 +53,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		194FD8B427033387008F4AA7 /* Visitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Visitor.swift; sourceTree = "<group>"; };
 		195AD47326FCA90E00050E9D /* CodeDesign-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CodeDesign-Bridging-Header.h"; sourceTree = "<group>"; };
 		195AD47D26FCA92600050E9D /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		196DFAA42701F7B700177F7C /* MethodTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethodTemplate.swift; sourceTree = "<group>"; };
 		196E776F26F5E7930046C7A4 /* CodeDesign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeDesign.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		196E777226F5E7930046C7A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		196E777426F5E7930046C7A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -183,6 +187,8 @@
 				196E77AF26F5E7C30046C7A4 /* ChainOfResponsibility.swift */,
 				195AD47326FCA90E00050E9D /* CodeDesign-Bridging-Header.h */,
 				195AD47D26FCA92600050E9D /* State.swift */,
+				196DFAA42701F7B700177F7C /* MethodTemplate.swift */,
+				194FD8B427033387008F4AA7 /* Visitor.swift */,
 			);
 			path = Behavioral;
 			sourceTree = "<group>";
@@ -345,6 +351,7 @@
 				196E77BE26F5E7C30046C7A4 /* Mediator.swift in Sources */,
 				196E77CB26F5E7C30046C7A4 /* Decorator.swift in Sources */,
 				196E777726F5E7930046C7A4 /* ViewController.swift in Sources */,
+				196DFAA52701F7B700177F7C /* MethodTemplate.swift in Sources */,
 				196E77C626F5E7C30046C7A4 /* Flyweight.swift in Sources */,
 				196E77C326F5E7C30046C7A4 /* Builder.swift in Sources */,
 				196E77C726F5E7C30046C7A4 /* Bridge.swift in Sources */,
@@ -353,6 +360,7 @@
 				196E77C826F5E7C30046C7A4 /* Proxy.swift in Sources */,
 				195AD47E26FCA92600050E9D /* State.swift in Sources */,
 				196E77CA26F5E7C30046C7A4 /* Facade.swift in Sources */,
+				194FD8B527033387008F4AA7 /* Visitor.swift in Sources */,
 				196E77C926F5E7C30046C7A4 /* Composite.swift in Sources */,
 				196E777326F5E7930046C7A4 /* AppDelegate.swift in Sources */,
 				196E77C026F5E7C30046C7A4 /* CDNotification.swift in Sources */,
