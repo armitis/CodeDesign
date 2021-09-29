@@ -48,7 +48,9 @@ class ViewController: UIViewController {
         //模板方法
 //        testMethodTemplate()
         //访问者
-        testVisitor()
+//        testVisitor()
+        //策略模式
+        testStrategy()
     }
 
 

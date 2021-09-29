@@ -33,6 +33,7 @@
 		196E77C926F5E7C30046C7A4 /* Composite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196E77B926F5E7C30046C7A4 /* Composite.swift */; };
 		196E77CA26F5E7C30046C7A4 /* Facade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196E77BA26F5E7C30046C7A4 /* Facade.swift */; };
 		196E77CB26F5E7C30046C7A4 /* Decorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196E77BB26F5E7C30046C7A4 /* Decorator.swift */; };
+		197982C4270492AB00E700A3 /* Strategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197982C3270492AB00E700A3 /* Strategy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,7 @@
 		196E77B926F5E7C30046C7A4 /* Composite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Composite.swift; sourceTree = "<group>"; };
 		196E77BA26F5E7C30046C7A4 /* Facade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Facade.swift; sourceTree = "<group>"; };
 		196E77BB26F5E7C30046C7A4 /* Decorator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Decorator.swift; sourceTree = "<group>"; };
+		197982C3270492AB00E700A3 /* Strategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strategy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +191,7 @@
 				195AD47D26FCA92600050E9D /* State.swift */,
 				196DFAA42701F7B700177F7C /* MethodTemplate.swift */,
 				194FD8B427033387008F4AA7 /* Visitor.swift */,
+				197982C3270492AB00E700A3 /* Strategy.swift */,
 			);
 			path = Behavioral;
 			sourceTree = "<group>";
@@ -363,6 +366,7 @@
 				194FD8B527033387008F4AA7 /* Visitor.swift in Sources */,
 				196E77C926F5E7C30046C7A4 /* Composite.swift in Sources */,
 				196E777326F5E7930046C7A4 /* AppDelegate.swift in Sources */,
+				197982C4270492AB00E700A3 /* Strategy.swift in Sources */,
 				196E77C026F5E7C30046C7A4 /* CDNotification.swift in Sources */,
 				196E77C426F5E7C30046C7A4 /* AbstractFactroy.swift in Sources */,
 				196E77BD26F5E7C30046C7A4 /* Command.swift in Sources */,
