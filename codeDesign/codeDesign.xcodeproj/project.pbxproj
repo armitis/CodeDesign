@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1910006127171158005AF19B /* Adapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1910006027171158005AF19B /* Adapter.swift */; };
 		194FD8B527033387008F4AA7 /* Visitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194FD8B427033387008F4AA7 /* Visitor.swift */; };
 		195AD47E26FCA92600050E9D /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195AD47D26FCA92600050E9D /* State.swift */; };
 		196DFAA52701F7B700177F7C /* MethodTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196DFAA42701F7B700177F7C /* MethodTemplate.swift */; };
@@ -54,6 +55,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1910006027171158005AF19B /* Adapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adapter.swift; sourceTree = "<group>"; };
 		194FD8B427033387008F4AA7 /* Visitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Visitor.swift; sourceTree = "<group>"; };
 		195AD47326FCA90E00050E9D /* CodeDesign-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CodeDesign-Bridging-Header.h"; sourceTree = "<group>"; };
 		195AD47D26FCA92600050E9D /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
@@ -215,6 +217,7 @@
 				196E77B926F5E7C30046C7A4 /* Composite.swift */,
 				196E77BA26F5E7C30046C7A4 /* Facade.swift */,
 				196E77BB26F5E7C30046C7A4 /* Decorator.swift */,
+				1910006027171158005AF19B /* Adapter.swift */,
 			);
 			path = Structure;
 			sourceTree = "<group>";
@@ -363,6 +366,7 @@
 				196E77C826F5E7C30046C7A4 /* Proxy.swift in Sources */,
 				195AD47E26FCA92600050E9D /* State.swift in Sources */,
 				196E77CA26F5E7C30046C7A4 /* Facade.swift in Sources */,
+				1910006127171158005AF19B /* Adapter.swift in Sources */,
 				194FD8B527033387008F4AA7 /* Visitor.swift in Sources */,
 				196E77C926F5E7C30046C7A4 /* Composite.swift in Sources */,
 				196E777326F5E7930046C7A4 /* AppDelegate.swift in Sources */,

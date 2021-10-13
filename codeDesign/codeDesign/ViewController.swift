@@ -50,7 +50,9 @@ class ViewController: UIViewController {
         //访问者
 //        testVisitor()
         //策略模式
-        testStrategy()
+//        testStrategy()
+        //适配器
+        testAdapter()
     }
 
 
