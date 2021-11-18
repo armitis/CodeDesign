@@ -52,7 +52,9 @@ class ViewController: UIViewController {
         //策略模式
 //        testStrategy()
         //适配器
-        testAdapter()
+//        testAdapter()
+        //单例模式
+        testSingle()
     }
 
 
