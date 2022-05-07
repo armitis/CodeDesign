@@ -46,8 +46,8 @@ class DataSourceDecorator: DataSource {
 class EncryptionDecorator: DataSourceDecorator {
     
     override func read() -> String {
-        print("解密...")
         let s = self.ds.read()
+        print("解密...")
         return s
     }
     
@@ -60,8 +60,8 @@ class EncryptionDecorator: DataSourceDecorator {
 class CompressionDecorator: DataSourceDecorator {
     
     override func read() -> String {
-        print("解压缩...")
         let c = self.ds.read()
+        print("解压缩...")
         return c
     }
     
