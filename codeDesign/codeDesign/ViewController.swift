@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         //装饰者
         //testDecorator()
         //门面模式
-        //testFacade()
+        testFacade()
         //享元模式
         //testFlyweight()
         //代理模式
@@ -54,7 +54,7 @@ class ViewController: UIViewController {
         //适配器
 //        testAdapter()
         //单例模式
-        testSingle()
+//        testSingle()
     }
 
 
