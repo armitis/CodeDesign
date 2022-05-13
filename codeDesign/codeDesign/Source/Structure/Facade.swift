@@ -40,10 +40,6 @@ class File {
 }
 
 class SourceCodec {
-    func buffer(fn: String) -> Buffer {
-        return Buffer(fn: fn)
-    }
-    
     func name() -> String {
         return ""
     }
