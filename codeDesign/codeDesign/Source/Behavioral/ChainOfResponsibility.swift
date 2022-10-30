@@ -49,11 +49,26 @@ enum ChainOfResponsibility {
     }
     
     class Panel: Container {
+        var modalHelpText: String?
         
+        override func showHelp() {
+            if let txt = modalHelpText {
+                print("模态窗口提示：\(txt)")
+            } else {
+                super.showHelp()
+            }
+        }
     }
     
     class Dialog: Container {
-        
+        var wikiPageURL: String?
+        override func showHelp() {
+            if let url = wikiPageURL {
+                print("在浏览器中打开：\(url)")
+            } else {
+                super.showHelp()
+            }
+        }
     }
 }
 
@@ -72,5 +87,6 @@ func testChain() {
     
     confirm.showHelp()
     panelButton.showHelp()
+    dialog.showHelp()
 }
 
