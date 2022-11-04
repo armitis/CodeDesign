@@ -87,6 +87,7 @@ func testChain() {
     
     //这里省略了事件分发的逻辑，直接出发相应的按钮点击事件
     confirm.showHelp()
+    //pannelButton没有提示信息，展示帮助的逻辑由Panel完成
     panelButton.showHelp()
     dialog.showHelp()
 }
