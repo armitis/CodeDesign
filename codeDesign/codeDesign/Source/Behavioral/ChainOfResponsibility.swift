@@ -85,6 +85,7 @@ func testChain() {
     panel.add(c: panelButton)
     dialog.add(c: panel)
     
+    //这里省略了事件分发的逻辑，直接出发相应的按钮点击事件
     confirm.showHelp()
     panelButton.showHelp()
     dialog.showHelp()
