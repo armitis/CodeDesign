@@ -9,9 +9,11 @@ import Foundation
 
 class Person {
     var name = ""
+    let id: String
     
-    init(_ n: String) {
-        self.name = n;
+    init(_ n: String, _ id: String) {
+        self.name = n
+        self.id = id
     }
     
     func printSelf() {
@@ -56,9 +58,9 @@ class Facebook: SocailNetwork {
     }
     
     func personArrayWithId(id: String, type: String) -> [Person] {
-        let p1 = Person("\(type)张三")
-        let p2 = Person("\(type)李四")
-        let p3 = Person("\(type)王五")
+        let p1 = Person("\(type)张三", "11")
+        let p2 = Person("\(type)李四", "12")
+        let p3 = Person("\(type)王五", "13")
         return [p1, p2, p3]
     }
 }
