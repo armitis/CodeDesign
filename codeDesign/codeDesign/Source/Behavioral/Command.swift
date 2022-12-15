@@ -44,7 +44,6 @@ class BaseCommand {
 class CopyCommand: BaseCommand {
     
     override func excute() -> Bool {
-        super.excute()
         self.app.clipboard = self.editor.content
         return false
     }
@@ -57,7 +56,6 @@ class CopyCommand: BaseCommand {
 class ClipCommand: BaseCommand {
     
     override func excute() -> Bool {
-        super.excute()
         self.saveBackup(self.editor.content)
         self.app.clipboard = self.editor.content
         self.editor.content = nil
@@ -65,14 +63,13 @@ class ClipCommand: BaseCommand {
     }
     
     override func printSelf() {
-        print("剪切: \(self.editor.content)")
+        print("剪切: \(self.editor.content ?? "")")
     }
 }
 
 class PasteCommand: BaseCommand {
     
     override func excute() -> Bool {
-        super.excute()
         self.saveBackup(self.editor.content)
         if let c = self.app.clipboard {
             self.editor.content = c
@@ -88,7 +85,6 @@ class PasteCommand: BaseCommand {
 class UndoCommand: BaseCommand {
     
     override func excute() -> Bool {
-        super.excute()
         self.app.undo()
         return true
     }
