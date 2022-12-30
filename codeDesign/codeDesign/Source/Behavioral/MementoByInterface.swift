@@ -37,11 +37,11 @@ enum MementoByInterface {
         }
         
         func createSnapshot() -> ISnapshot {
-            return Snapshot(edit: self, txt: self.text ?? "", cursor: self.cursor, selectionWidth: self.selectionWidth)
+            return ConcreteSnapshot(edit: self, txt: self.text ?? "", cursor: self.cursor, selectionWidth: self.selectionWidth)
         }
         
         func restore(snap: ISnapshot) {
-            guard let sn = snap as? Snapshot else {
+            guard let sn = snap as? ConcreteSnapshot else {
                 return
             }
             self.setText(txt: sn.text)
@@ -50,7 +50,7 @@ enum MementoByInterface {
         }
     }
     
-    class Snapshot:ISnapshot {
+    class ConcreteSnapshot:ISnapshot {
         
         var text: String?
         var cursor: CGPoint
