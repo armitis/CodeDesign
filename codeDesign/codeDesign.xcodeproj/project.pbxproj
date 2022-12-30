@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1910006127171158005AF19B /* Adapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1910006027171158005AF19B /* Adapter.swift */; };
+		1924250E295F130C005DCA0A /* MementoByInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1924250D295F130C005DCA0A /* MementoByInterface.swift */; };
 		194FD8B527033387008F4AA7 /* Visitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194FD8B427033387008F4AA7 /* Visitor.swift */; };
 		195AD47E26FCA92600050E9D /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195AD47D26FCA92600050E9D /* State.swift */; };
 		196DFAA52701F7B700177F7C /* MethodTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196DFAA42701F7B700177F7C /* MethodTemplate.swift */; };
@@ -58,6 +59,7 @@
 
 /* Begin PBXFileReference section */
 		1910006027171158005AF19B /* Adapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adapter.swift; sourceTree = "<group>"; };
+		1924250D295F130C005DCA0A /* MementoByInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MementoByInterface.swift; sourceTree = "<group>"; };
 		194FD8B427033387008F4AA7 /* Visitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Visitor.swift; sourceTree = "<group>"; };
 		195AD47326FCA90E00050E9D /* CodeDesign-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CodeDesign-Bridging-Header.h"; sourceTree = "<group>"; };
 		195AD47D26FCA92600050E9D /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 				196DFAA42701F7B700177F7C /* MethodTemplate.swift */,
 				194FD8B427033387008F4AA7 /* Visitor.swift */,
 				197982C3270492AB00E700A3 /* Strategy.swift */,
+				1924250D295F130C005DCA0A /* MementoByInterface.swift */,
 			);
 			path = Behavioral;
 			sourceTree = "<group>";
@@ -361,6 +364,7 @@
 			files = (
 				196E77BF26F5E7C30046C7A4 /* Iterator.swift in Sources */,
 				196E77BE26F5E7C30046C7A4 /* Mediator.swift in Sources */,
+				1924250E295F130C005DCA0A /* MementoByInterface.swift in Sources */,
 				196E77CB26F5E7C30046C7A4 /* Decorator.swift in Sources */,
 				196E777726F5E7930046C7A4 /* ViewController.swift in Sources */,
 				196DFAA52701F7B700177F7C /* MethodTemplate.swift in Sources */,

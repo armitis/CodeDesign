@@ -10,81 +10,96 @@ import UIKit
 
 class TextEditor {
     
-    var text: String?
-    var point: CGPoint?
-    var height: CGFloat = 0
+    private var text: String?
+    private var cursor: CGPoint = CGPointZero
+    private var selectionWidth: CGFloat = 0
     
-    func save() -> Memento {
-        return Memento(txt: self.text ?? "", point: self.point ?? CGPoint.zero, height: self.height)
-    }
-    
-    func resotre(m: Memento) {
-        self.text = m.text
-        self.point = m.point
-        self.height = m.height
-    }
-}
-
-class Memento {
-    
-    var text: String?
-    var point: CGPoint?
-    var height: CGFloat = 0
-    
-    init(txt: String, point: CGPoint, height: CGFloat) {
+    func setText(txt: String?) {
         self.text = txt
-        self.point = point
-        self.height = height
     }
     
+    func getText() -> String? {
+        return self.text
+    }
+    
+    private func setCursor(cursor: CGPoint) {
+        self.cursor = cursor
+    }
+    
+    private func setSelectionWidth(width: CGFloat) {
+        self.selectionWidth = width
+    }
+    
+    func createSnapshot() -> Snapshot {
+        return Snapshot(edit: self, txt: self.text ?? "", cursor: self.cursor, selectionWidth: self.selectionWidth)
+    }
+    
+    class Snapshot {
+        
+        private var text: String?
+        private var cursor: CGPoint
+        private var selectionWidth: CGFloat = 0
+        private var edit: TextEditor?
+        
+        init(edit: TextEditor,txt: String, cursor: CGPoint, selectionWidth: CGFloat) {
+            self.text = txt
+            self.cursor = cursor
+            self.selectionWidth = selectionWidth
+            self.edit = edit
+        }
+        
+        func restore() {
+            guard let e = self.edit else {
+                return
+            }
+            e.setText(txt: self.text)
+            e.setCursor(cursor: self.cursor)
+            e.setSelectionWidth(width: self.selectionWidth)
+        }
+    }
 }
-
 
 class Command {
     
-    let textEditor: TextEditor
-    var history = [Memento]()
+    private let editor: TextEditor
+    private var ss: TextEditor.Snapshot?
     
-    init(te: TextEditor) {
-        self.textEditor = te
+    init(edit: TextEditor) {
+        self.editor = edit
     }
     
-    func save() {
-        self.history.append(self.textEditor.save())
+    func makeBackup() {
+        self.ss = self.editor.createSnapshot()
     }
     
-    func revoke() {
-        if let m = self.history.last {
-            self.textEditor.resotre(m: m)
-            self.history.removeLast()
+    func excute() {
+        self.editor.setText(txt: "456")
+    }
+    
+    func undo() {
+        guard let s = ss else {
+            return
         }
+        
+        s.restore()
     }
 }
 
 func testMemento() {
     
     let te = TextEditor()
-    let c = Command(te: te)
-    c.save()
+    te.setText(txt: "1233")
     
-    c.save()
-    te.text = "123"
-    print("\(te.text!)")
+    print(te.getText() ?? "")
     
-    c.save()
-    te.text = "123456"
-    print("\(te.text!)")
+    let c = Command(edit: te)
+    c.makeBackup()
+    c.excute()
     
-    c.save()
-    te.text = "123456789"
-    print("\(te.text!)")
+    print(te.getText() ?? "")
     
-    c.revoke()
-    print("\(te.text!)")
+    c.undo()
+    print(te.getText() ?? "")
     
-    c.revoke()
-    print("\(te.text!)")
     
-    c.revoke()
-    print("\(te.text!)")
 }
