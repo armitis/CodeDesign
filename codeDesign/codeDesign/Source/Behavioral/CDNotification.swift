@@ -41,8 +41,8 @@ class CDNotification {
             }
             let ob = ObserverObject(o: observer, sl: selector)
             self.observerValueMap[observer] = ob
-            if !self.observers[notificationName]!.contains(observer) {
-                self.observers[notificationName]!.add(observer)
+            if !self.observers[notificationName]!.contains(ob) {
+                self.observers[notificationName]!.add(ob)
             }
         }
     }
@@ -98,7 +98,7 @@ class TestA: NSObject {
 
 func testNotification() {
     
-    let a = TestA()
+    let _ = TestA()
     let data = ["name": "123" as NSString]
     CDNotification.instantance.notify(name: "ABC", data: data)
     
