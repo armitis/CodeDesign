@@ -101,6 +101,4 @@ func testNotification() {
     let _ = TestA()
     let data = ["name": "123" as NSString]
     CDNotification.instantance.notify(name: "ABC", data: data)
-    
-    
 }

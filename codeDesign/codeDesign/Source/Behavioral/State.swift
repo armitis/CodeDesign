@@ -107,7 +107,6 @@ class VideoPlayer {
     
     private var state: State?
     
-    var isPlaying = false
     
     init() {
         
