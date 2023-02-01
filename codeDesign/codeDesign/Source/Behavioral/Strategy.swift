@@ -37,7 +37,7 @@ class MultipleCaculator: Caculator {
     }
 }
 
-class CacualtroManager {
+class CaculatorManager {
     
     var cacualtor: Caculator?
     
@@ -68,7 +68,7 @@ class CacualtroManager {
 
 func testStrategy() {
     
-    let manager = CacualtroManager()
+    let manager = CaculatorManager()
     let a = 100
     let b = 20
     
