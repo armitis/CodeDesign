@@ -18,9 +18,9 @@ class HouseBuilder {
     func build() {
         self.buildFloor()
         self.buildWall()
+        self.buildRoof()
         self.buildWindow()
         self.buildDoor()
-        self.buildRoof()
     }
     
     func buildWindow() {
